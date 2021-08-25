@@ -1,4 +1,4 @@
-# FME-Order-Summary.
+# FME-Order-Summary
 This is a submit for a Front End Mentor Challenge ( Order Summary ).
 ## What is in here?
 I took a challenge from the famous website front end mentor, which gives chalenges for front-end web developers.
