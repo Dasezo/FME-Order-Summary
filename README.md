@@ -7,7 +7,7 @@ This challenge called Order Summary, which is a card in the middle of screen has
 - HTML 
 - CSS
 - Sass
-Media quires for responsive with flex box...
+Media queries for responsive with flex box...
 
 
 
