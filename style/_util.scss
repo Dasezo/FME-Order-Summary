@@ -1,0 +1,33 @@
+// imported
+@import "variables";
+
+// functions
+@mixin media-up($size) {
+  @media (min-width: map-get($media-up, $size )) {
+    @content;
+  }
+}
+@mixin media-down($size) {
+  @media (max-width: map-get($media-down , $size )) {
+    @content;
+  }
+}
+
+@function rem($px, $context: 16) {
+  @return ($px/$context) * 1rem;
+}
+// Globals
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+body {
+  font: {
+    family: "Red Hat Display", sans-serif;
+    size: 16px;
+  }
+}

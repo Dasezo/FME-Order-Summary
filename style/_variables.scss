@@ -1,0 +1,22 @@
+// ---color
+// color-primary
+$Pblue: hsl(225, 100%, 94%);
+$Bblue: hsl(245, 75%, 52%);
+// color-Neutral
+$Vpblue: hsl(225, 100%, 98%);
+$Dblue: hsl(224, 23%, 55%);
+$Dkblue: hsl(223, 47%, 23%);
+
+// ----layout
+// 375px 767 px 1440px
+$media-up: (
+  "mobile": "23.4375em",
+  "tablet": "47.9375em",
+  "desktop": "90em",
+);
+// 374px 766px 1439px
+$media-down: (
+  "mobile": "23.375em",
+  "tablet": "47.875em",
+  "desktop": "89.9375em",
+);

@@ -1,0 +1,126 @@
+@import "util";
+@import "variables";
+body {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  background-color: $Pblue;
+}
+.bg_img {
+  background: url(../images/pattern-background-mobile.svg) no-repeat
+    center/cover;
+  position: absolute;
+  height: 400px;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  @include media-up(tablet) {
+    background: url(../images/pattern-background-desktop.svg) no-repeat
+      center/cover;
+    height: 70vh;
+    top: -150px;
+  }
+}
+.card {
+  background: {
+    color: $Vpblue;
+  }
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  text-align: center;
+  border-radius: rem(20);
+  max-width: rem(400);
+  box-shadow: 0px 14px 20px 0px #3829e020;
+  @include media-up(tablet) {
+    width: 400px;
+  }
+  .img {
+    background: {
+      image: url("../images/illustration-hero.svg");
+      size: cover;
+    }
+    width: 100%;
+    height: rem(170);
+    border-radius: rem(20) rem(20) 0 0;
+    object-fit: cover;
+  }
+  .content {
+    padding: rem(25);
+    @include media-up(tablet) {
+      padding: rem(40);
+    }
+    h2 {
+      color: $Dkblue;
+      font-weight: 900;
+      margin-bottom: rem(20);
+    }
+    p {
+      color: $Dblue;
+      line-height: 1.8;
+      margin-bottom: rem(20);
+    }
+    .plan {
+      display: flex;
+      align-items: center;
+
+      background-color: hsla(225, 100%, 94%, 0.3);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 25px;
+      article {
+        color: $Dkblue;
+        margin-left: 20px;
+        h4 {
+          margin-bottom: 5px;
+        }
+        span {
+          color: $Dblue;
+        }
+      }
+      a {
+        color: $Bblue;
+        font-weight: bolder;
+        font-size: 14px;
+        display: flex;
+        margin-left: auto;
+        &:hover {
+          color: hsla(245, 75%, 52%, 0.7);
+          text-decoration: none;
+        }
+      }
+    }
+    button {
+      display: block;
+      margin: auto;
+      margin-bottom: 25px;
+      width: 100%;
+      border: none;
+      color: white;
+      padding: 15px 0;
+      background-color: $Bblue;
+      font-weight: 900;
+      border-radius: rem(10);
+      box-shadow: 0px 20px 10px #3829e020;
+      cursor: pointer;
+      &:hover {
+        background-color: hsla(245, 75%, 52%, 0.7);
+      }
+    }
+    a.cancel {
+      text-decoration: none;
+      display: block;
+      font-weight: 700;
+      color: $Dblue;
+      font-size: 15px;
+      margin-bottom: 10px;
+      &:hover {
+        color: $Dkblue;
+      }
+    }
+  }
+}
